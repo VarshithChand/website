@@ -1,107 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FlaskDev - Modern Web Solutions</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlaskDev - Modern Flask web applications with DevOps automation and cloud solutions">
+    <meta name="keywords" content="Flask development, DevOps, CI/CD, AWS, cloud migration">
+    <title>FlaskDev - Modern Web Solutions | Flask Development & DevOps</title>
+    
+    <!-- Preconnect to external resources for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Optimized font loading with display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation with improved accessibility -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="FlaskDev Home">
+                <span class="logo-icon" aria-hidden="true">⚡</span>
+                <span class="logo-text">FlaskDev</span>
+            </a>
+            
+            <!-- Mobile menu toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <div class="nav-links" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </nav>
 
-<nav class="navbar">
-<div class="nav-container">
-<div class="logo">
-<span class="logo-icon">⚡</span>
-<span class="logo-text">FlaskDev</span>
-</div>
-<div class="nav-links">
-<a href="#home" class="nav-link">Home</a>
-<a href="#about" class="nav-link">About</a>
-<a href="#services" class="nav-link">Services</a>
-<a href="#portfolio" class="nav-link">Portfolio</a>
-<a href="#process" class="nav-link">Process</a>
-<a href="#contact" class="nav-link">Contact</a>
-</div>
-<a href="#contact" class="cta-button">Get Started</a>
-</div>
-</nav>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Build Fast.<br>Deploy <span class="highlight">Smarter.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Modern Flask web apps with DevOps automation and cloud infrastructure
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+                <span class="scroll-arrow">↓</span>
+            </a>
+        </section>
 
-<section id="home" class="hero">
-<div class="hero-content">
-<h1 class="hero-title">
-Build Fast.<br>Deploy <span class="highlight">Smarter.</span>
-</h1>
-<p class="hero-subtitle">
-Modern Flask web apps with DevOps automation
-</p>
-<div class="hero-buttons">
-<a href="#contact" class="btn btn-primary">Start Your Project</a>
-<a href="#portfolio" class="btn btn-secondary">View Our Work</a>
-</div>
-</div>
-</section>
+        <!-- About Section - Enhanced -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="section-intro">
+                    We specialize in building scalable Flask web applications with cutting-edge DevOps practices and cloud infrastructure. 
+                    Our team delivers robust, secure, and high-performance solutions tailored to your business needs.
+                </p>
+                
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Fast Development</h3>
+                        <p>Rapid prototyping and agile development methodologies</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure by Default</h3>
+                        <p>Industry-standard security practices built into every project</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Scalable Solutions</h3>
+                        <p>Infrastructure that grows with your business</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="about" class="about">
-<h2>About Us</h2>
-<p>We build scalable Flask web applications with cloud and DevOps.</p>
-</section>
+        <!-- Services Section - Enhanced -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p class="section-intro">End-to-end development and deployment solutions</p>
+                
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Flask Development</h3>
+                        <p>Custom web applications built with Flask, RESTful APIs, and modern Python best practices</p>
+                        <ul class="service-features">
+                            <li>REST API Development</li>
+                            <li>Database Integration</li>
+                            <li>Authentication & Authorization</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon">🐳</div>
+                        <h3>Docker & CI/CD</h3>
+                        <p>Containerization and automated deployment pipelines for faster, reliable releases</p>
+                        <ul class="service-features">
+                            <li>Docker Containerization</li>
+                            <li>GitHub Actions / GitLab CI</li>
+                            <li>Automated Testing</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>AWS Cloud Setup</h3>
+                        <p>Cloud infrastructure design, deployment, and optimization on AWS</p>
+                        <ul class="service-features">
+                            <li>EC2, ECS, Lambda</li>
+                            <li>RDS & Database Management</li>
+                            <li>Load Balancing & Auto-scaling</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Security & Monitoring</h3>
+                        <p>Comprehensive security audits and real-time monitoring solutions</p>
+                        <ul class="service-features">
+                            <li>Security Best Practices</li>
+                            <li>SSL/TLS Configuration</li>
+                            <li>Application Monitoring</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="services" class="services">
-<h2>Services</h2>
-<ul>
-<li>Flask Development</li>
-<li>Docker & CI/CD</li>
-<li>AWS Cloud Setup</li>
-<li>Security</li>
-</ul>
-</section>
+        <!-- Portfolio Section - Enhanced -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <p class="section-intro">Real-world projects built with Flask and DevOps excellence</p>
+                
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="E-commerce Platform" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Scalable Flask application with payment integration and real-time inventory</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">AWS</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Analytics Dashboard" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Real-time data visualization with Flask and React integration</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="{{ url_for('static', filename='images/project3.jpg') }}" alt="API Gateway" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>API Gateway</h3>
+                            <p>Microservices architecture with automated CI/CD pipeline</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">CI/CD</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="portfolio" class="portfolio">
-<h2>Portfolio</h2>
-<p>Real world projects built with Flask and DevOps pipelines.</p>
-</section>
+        <!-- Process Section - Enhanced -->
+        <section id="process" class="process">
+            <div class="container">
+                <h2>Our Process</h2>
+                <p class="section-intro">A streamlined approach from concept to deployment</p>
+                
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Plan & Discover</h3>
+                        <p>Understanding your requirements and defining project scope</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Build & Develop</h3>
+                        <p>Agile development with regular feedback and iterations</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Test & Optimize</h3>
+                        <p>Comprehensive testing and performance optimization</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Deploy & Monitor</h3>
+                        <p>Seamless deployment with continuous monitoring</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <h3>Scale & Support</h3>
+                        <p>Ongoing maintenance and scaling as you grow</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="process" class="process">
-<h2>Process</h2>
-<p>Plan → Build → Test → Deploy → Scale</p>
-</section>
+        <!-- Contact Section - Enhanced -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="section-intro">Ready to start your project? Let's discuss how we can help</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Why Work With Us?</h3>
+                        <ul class="benefits-list">
+                            <li>✓ Expert Flask & Python developers</li>
+                            <li>✓ DevOps and cloud specialists</li>
+                            <li>✓ Transparent communication</li>
+                            <li>✓ On-time delivery guarantee</li>
+                            <li>✓ Post-launch support included</li>
+                        </ul>
+                        
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> <a href="mailto:hello@flaskdev.com">hello@flaskdev.com</a></p>
+                            <p><strong>Response Time:</strong> Within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <form method="POST" action="/" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required 
+                                    autocomplete="name"
+                                    placeholder="John Doe"
+                                >
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    autocomplete="email"
+                                    placeholder="john@example.com"
+                                >
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project">Project Type *</label>
+                            <select id="project" name="project" required>
+                                <option value="">-- Select a project type --</option>
+                                <option value="web-app">Web Application</option>
+                                <option value="devops">DevOps Setup</option>
+                                <option value="cloud">Cloud Migration</option>
+                                <option value="api">API Development</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Project *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                required
+                                placeholder="Describe your project requirements, timeline, and budget..."
+                            ></textarea>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>Send me updates about new services and technologies</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Send Message</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        
+                        <p class="form-note">* Required fields. We respect your privacy and never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section id="contact" class="contact">
-<h2>Contact Us</h2>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon" aria-hidden="true">⚡</span>
+                        <span class="logo-text">FlaskDev</span>
+                    </div>
+                    <p>Modern Flask development with DevOps excellence</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Flask Development</a></li>
+                            <li><a href="#services">CI/CD Pipeline</a></li>
+                            <li><a href="#services">Cloud Migration</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul class="social-links">
+                            <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlaskDev. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<form method="POST" action="/">
-<div class="form-group">
-<label>Your Name</label>
-<input type="text" name="name" required>
-</div>
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        ↑
+    </button>
 
-<div class="form-group">
-<label>Email</label>
-<input type="email" name="email" required>
-</div>
-
-<div class="form-group">
-<label>Project</label>
-<select name="project">
-<option>Web Application</option>
-<option>DevOps Setup</option>
-<option>Cloud Migration</option>
-</select>
-</div>
-
-<div class="form-group">
-<label>Message</label>
-<textarea name="message" rows="4" required></textarea>
-</div>
-
-<button type="submit" class="btn btn-primary">Send Message</button>
-</form>
-</section>
-
-<footer class="footer">
-<p>© 2024 FlaskDev</p>
-</footer>
-
+    <!-- JavaScript for interactivity -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
